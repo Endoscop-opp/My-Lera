@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+       background-color: #d6d6d6;
+   
+}
+header{
+  width: 100vw;
+    height: 100vh;
+}
+
+.status{
+    position: relative;
+    font-size: 36px;
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+   text-align: center;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    padding: 15vh 0;
+}
+
+.ParName{
+    position: relative;
+    font-size: 42px;
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+   text-align: center;
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+}
+
+.apos{
+    position: relative;
+    font-size: 50px;
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+   text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: 5vh 0;
+}
+ .gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    margin: 50px auto;
+    width: 1000px;
+    justify-items: center;
+ }
+ .versa{
+    background-image: url(../IMg/image\ 1.png);
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+ }
+
+button{
+    width: 400px;
+    height: 100px;
+    background-color: transparent;
+    border: 2px solid rgb(54, 54, 54);
+      font-size: 42px;
+    font-family: Dancing Script, Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+@media screen and (max-width:769px){
+  .convent{
+    transform: scale(70%);
+  }  
+  .gr{
+width: 100%;}
+}
+
+@media screen and (max-width:500px){
+  .convent{
+    transform: scale(50%);
+  }  
+  .gr{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px auto 5px auto;
+    width: 100%;
+    height: auto;
+    grid-gap: 20px;
+  }
+  .apos{
+   padding: 0;
+   font-size: 28px;
+   margin-top: 50px
+  }
+  .status{
+    margin: 50px 0;
+ padding: 0;
+ font-size: 18px;
+ max-width: 200px;
+ margin: 50px auto;
+  }
+  .ParName{
+     font-size: 20px;
+  }
+
+  button{
+     font-size: 22px;
+     width: 300px;
+     height: 50px;
+  }
+  .versa{
+    width: 120px;
+    height: 80px;
+  }
+  header{
+    height: fit-content;
+  }
+}
